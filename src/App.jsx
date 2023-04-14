@@ -20,6 +20,7 @@ const Images = () => {
       {images.map((image, index) => (
         <img
           key={index}
+          loading="lazy"
           className="imgs"
           src={image}
           onError={handleImageError}
